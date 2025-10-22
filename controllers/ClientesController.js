@@ -5,7 +5,7 @@ const router = express.Router();
 // ROTA CLIENTES
 router.get("/clientes", function (req, res) {
   Cliente.findAll().then((clientes) => {
-    res.render("clientes", {
+    res.render("cliente", {
       clientes: clientes,
     });
   }).catch((err) => {
